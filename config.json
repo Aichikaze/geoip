@@ -85,7 +85,7 @@
       "args": {
         "outputDir": "./output",
         "outputName": "geoip.dat",
-        "wantedList": ["direct", "akamai", "cdn77", "cloudflare", "cloudfront", "digitalocean", "discord", "fastly", "gcore", "telegram", "hetzner", "ovh", "oracle", "vultr", "scaleway"]
+        "wantedList": ["direct", "private", "akamai", "cdn77", "cloudflare", "cloudfront", "digitalocean", "discord", "fastly", "gcore", "telegram", "hetzner", "ovh", "oracle", "vultr", "scaleway"]
       }
     },
     {
@@ -94,14 +94,14 @@
       "args": {
         "outputDir": "./output",
         "outputName": "Country.mmdb",
-        "overwriteList": ["direct", "akamai", "cdn77", "cloudflare", "cloudfront", "digitalocean", "discord", "fastly", "gcore", "telegram", "hetzner", "ovh", "oracle", "vultr", "scaleway"]
+        "overwriteList": ["direct", "private", "akamai", "cdn77", "cloudflare", "cloudfront", "digitalocean", "discord", "fastly", "gcore", "telegram", "hetzner", "ovh", "oracle", "vultr", "scaleway"]
       }
     },
     {
       "type": "singboxSRS",
       "action": "output",
       "args": {
-        "outputDir": "./output",
+        "outputDir": "./output/srs",
         "wantedList": ["direct", "akamai", "cdn77", "cloudflare", "cloudfront", "digitalocean", "discord", "fastly", "gcore", "telegram", "hetzner", "ovh", "oracle", "vultr", "scaleway"]
       }
     },
@@ -109,7 +109,7 @@
       "type": "mihomoMRS",
       "action": "output",
       "args": {
-        "outputDir": "./output",
+        "outputDir": "./output/mrs",
         "wantedList": ["direct", "akamai", "cdn77", "cloudflare", "cloudfront", "digitalocean", "discord", "fastly", "gcore", "telegram", "hetzner", "ovh", "oracle", "vultr", "scaleway"]
       }
     },
@@ -117,7 +117,7 @@
       "type": "text",
       "action": "output",
       "args": {
-        "outputDir": "./output",
+        "outputDir": "./output/text",
         "wantedList": ["direct", "akamai", "cdn77", "cloudflare", "cloudfront", "digitalocean", "discord", "fastly", "gcore", "telegram", "hetzner", "ovh", "oracle", "vultr", "scaleway"]
       }
     },
@@ -125,7 +125,7 @@
       "type": "clashRuleSetClassical",
       "action": "output",
       "args": {
-        "outputDir": "./output",
+        "outputDir": "./output/clash",
         "wantedList": ["direct", "akamai", "cdn77", "cloudflare", "cloudfront", "digitalocean", "discord", "fastly", "gcore", "telegram", "hetzner", "ovh", "oracle", "vultr", "scaleway"]
       }
     },
@@ -134,7 +134,7 @@
       "action": "output",
       "args": {
         "addSuffixInLine": ",no-resolve",
-        "outputDir": "./output",
+        "outputDir": "./output/surge",
         "wantedList": ["direct", "akamai", "cdn77", "cloudflare", "cloudfront", "digitalocean", "discord", "fastly", "gcore", "telegram", "hetzner", "ovh", "oracle", "vultr", "scaleway"]
       }
     }
