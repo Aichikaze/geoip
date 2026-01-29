@@ -16,7 +16,7 @@
       "action": "add",
       "args": {
         "name": "direct",
-        "uri": "https://raw.githubusercontent.com/hydraponique/roscomvpn-geoip/release/direct.txt"
+        "uri": "https://raw.githubusercontent.com/hydraponique/roscomvpn-geoip/release/text/direct.txt"
       }
     },
     {
