@@ -13,6 +13,14 @@
     },
     {
       "type": "text",
+      "action": "remove",
+      "args": {
+        "name": "private",
+        "ipOrCIDR": ["0.0.0.0/8"]
+      }
+    },
+    {
+      "type": "text",
       "action": "add",
       "args": {
         "name": "direct",
