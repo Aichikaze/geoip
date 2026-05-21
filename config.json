@@ -1,19 +1,29 @@
 {
   "input": [
     {
-      "type": "text",
+      "type": "v2rayGeoIPDat",
       "action": "add",
       "args": {
-        "name": "direct",
-        "uri": "https://raw.githubusercontent.com/hydraponique/roscomvpn-geoip/release/text/direct.txt"
+        "uri": "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat"
+      }
+    },
+    {
+      "type": "text",
+      "action": "remove",
+      "args": {
+        "name": "private",
+        "ipOrCIDR": [
+          "0.0.0.0/8",
+          "::/128"
+        ]
       }
     },
     {
       "type": "text",
       "action": "add",
       "args": {
-        "name": "private",
-        "uri": "https://raw.githubusercontent.com/hydraponique/roscomvpn-geoip/release/text/private.txt"
+        "name": "direct",
+        "uri": "https://raw.githubusercontent.com/hydraponique/roscomvpn-geoip/release/text/direct.txt"
       }
     },
     {
@@ -83,15 +93,6 @@
         "outputDir": "./output",
         "outputName": "geoip.dat",
         "wantedList": ["direct", "private", "akamai", "cdn77", "cloudflare", "cloudfront", "digitalocean", "discord", "fastly", "gcore", "telegram", "hetzner", "ovh", "oracle", "vultr", "scaleway"]
-      }
-    },
-    {
-      "type": "maxmindMMDB",
-      "action": "output",
-      "args": {
-        "outputDir": "./output",
-        "outputName": "Country.mmdb",
-        "overwriteList": ["direct", "private", "akamai", "cdn77", "cloudflare", "cloudfront", "digitalocean", "discord", "fastly", "gcore", "telegram", "hetzner", "ovh", "oracle", "vultr", "scaleway"]
       }
     },
     {
