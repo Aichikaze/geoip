@@ -8,18 +8,6 @@
       }
     },
     {
-      "type": "private",
-      "action": "add"
-    },
-    {
-      "type": "text",
-      "action": "remove",
-      "args": {
-        "name": "private",
-        "ipOrCIDR": ["0.0.0.0/8"]
-      }
-    },
-    {
       "type": "text",
       "action": "add",
       "args": {
@@ -106,14 +94,6 @@
       }
     },
     {
-      "type": "singboxSRS",
-      "action": "output",
-      "args": {
-        "outputDir": "./output/srs",
-        "wantedList": ["direct", "akamai", "cdn77", "cloudflare", "cloudfront", "digitalocean", "discord", "fastly", "gcore", "telegram", "hetzner", "ovh", "oracle", "vultr", "scaleway"]
-      }
-    },
-    {
       "type": "mihomoMRS",
       "action": "output",
       "args": {
@@ -134,15 +114,6 @@
       "action": "output",
       "args": {
         "outputDir": "./output/clash",
-        "wantedList": ["direct", "akamai", "cdn77", "cloudflare", "cloudfront", "digitalocean", "discord", "fastly", "gcore", "telegram", "hetzner", "ovh", "oracle", "vultr", "scaleway"]
-      }
-    },
-    {
-      "type": "surgeRuleSet",
-      "action": "output",
-      "args": {
-        "addSuffixInLine": ",no-resolve",
-        "outputDir": "./output/surge",
         "wantedList": ["direct", "akamai", "cdn77", "cloudflare", "cloudfront", "digitalocean", "discord", "fastly", "gcore", "telegram", "hetzner", "ovh", "oracle", "vultr", "scaleway"]
       }
     }
