@@ -1,10 +1,11 @@
 {
   "input": [
     {
-      "type": "v2rayGeoIPDat",
+      "type": "text",
       "action": "add",
       "args": {
-        "uri": "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat"
+        "name": "direct",
+        "uri": "https://raw.githubusercontent.com/hydraponique/roscomvpn-geoip/release/text/direct.txt"
       }
     },
     {
@@ -12,7 +13,7 @@
       "action": "add",
       "args": {
         "name": "direct",
-        "uri": "https://raw.githubusercontent.com/hydraponique/roscomvpn-geoip/release/text/direct.txt"
+        "uri": "https://raw.githubusercontent.com/hydraponique/roscomvpn-geoip/release/text/private.txt"
       }
     },
     {
